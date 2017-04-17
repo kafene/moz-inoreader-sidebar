@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Inoreader Sidebar (unofficial)",
+  "version": "0.0.1",
+  "description": "Displays the Inoreader.com mobile site in the sidebar",
+  "icons": {
+    "19": "img/icon-19.png",
+    "38": "img/icon-38.png",
+    "48": "img/icon-48.png",
+    "64": "img/icon-64.png",
+    "128": "img/icon-128.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://www.inoreader.com/"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "sidebar_action": {
+    "default_panel": "sidebar.html",
+    "default_icon": {
+      "19": "img/icon-19.png",
+      "38": "img/icon-38.png",
+      "48": "img/icon-48.png",
+      "64": "img/icon-64.png",
+      "128": "img/icon-128.png"
+    },
+    "default_title": "Inoreader"
+  },
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+I",
+        "mac": "Command+Shift+I"
+      }
+    }
+  }
+}
